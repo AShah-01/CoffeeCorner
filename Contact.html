@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header class="text-gray-600 body-font" style="background: grey; color: black;">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <span class="ml-3 text-xl" style="font-size: 30px;"><b>Coffee Corner</b></span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <button method="get" action="Index.html">
+              <a href="Index.html" class="mr-5 hover:text-gray-900">Home</a>
+              </button>
+              <button method="get" action="products&services.html">
+              <a href="products&services.html" class="mr-5 hover:text-gray-900">products&services</a>
+              </button>
+              <button method="get" action="Gallery.html">
+              <a href="Gallery.html" class="mr-5 hover:text-gray-900">Gallery</a>
+              </button>
+              <button method="get" action="Menu.html">
+              <a href="Menu.html" class="mr-5 hover:text-gray-900">Menu</a>
+              </button>
+              <button method="get" action="Contact.html">
+              <a href="Contact.html" class="mr-5 hover:text-gray-900">Contact</a>
+              </button>
+          </nav>
+    </div>
+</header>
+<style>
+  label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+  .form {
+    width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  }
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+input[type=reset] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  
+}
+#footer {
+  width:100%;
+  display: block;
+  clear:both;
+  background-color: black;
+  color:white;
+  padding-top:7px;
+  padding-bottom:7px;
+  text-align:center;
+}
+</style>
+<head>
+    <title>Coffee Corner Gallery</title>
+</head>
+<body style="background-color: lightgray;">
+  <section class="text-gray-600 body-font relative">
+    <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+      <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+        <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.898216525169!2d150.93019211452298!3d-33.68569961700886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129f982237192f%3A0x87306c60aeb59334!2sRouse%20Hill%20High%20School!5e0!3m2!1sen!2sau!4v1633857408978!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+          <div class="lg:w-1/2 px-6">
+            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS: </h2>
+            <p class="mt-1">123 fake st, fake suburb 0000</p>
+          </div>
+          <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL: </h2>
+            <a class="text-indigo-500 leading-relaxed">coffeecorner@email.com</a>
+            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE: </h2>
+            <p class="leading-relaxed">(02)-1234-5678</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
+        <p class="leading-relaxed mb-5 text-gray-600">Please enter your details below and send the feedback.</p>
+        <form action="mailto:aagam.shah@rh-hs.org" method="get" enctype="text/plain">
+        <div class="relative mb-4">
+          <label for="name" class="leading-7 text-sm text-gray-600">Your Name</label>
+          <input type="text" id="name" name="name" class="form">
+        </div>
+        <div class="relative mb-4">
+          <label for="email" class="leading-7 text-sm text-gray-600">Your Email</label>
+          <input type="email" id="email" name="email" class="form">
+        </div>
+        <div class="relative mb-4">
+          <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+          <textarea id="message" name="message" class="form"></textarea>
+        </div>
+        <input type="Submit" Value="Submit">
+        <input type="reset" value="reset">
+        </form>
+<!--        <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>-->
+        <p class="text-xs text-gray-500 mt-3"></p>
+      </div>
+    </div>
+  </section>   
+</body>
+<footer style="background: Grey border-box;">
+  <div id="footer">
+    <font size="+0.5px" align="left">
+      <b>Last edited on the 10th October 2021 ©</b>
+    </font>
+  </div>
+</footer>
+</html>
